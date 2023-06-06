@@ -35,7 +35,7 @@ import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-ma
             origin: originRef.current.value,
             destination: destinationRef.current.value,
         // eslint-disable-next-line
-            travelMode: google.maps.TravelMode.DRIVING
+            travelMode: google.maps.TravelMode.TRANSIT
 
         })
 
