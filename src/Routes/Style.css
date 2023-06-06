@@ -1,0 +1,52 @@
+
+.container1 {
+    padding-top: 10%;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    
+  }
+
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    margin-left: 41%;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    grid-column: span 2;
+    width: 12%;
+    margin-top: 1%;
+  }
+
+  .inline-text {
+    
+    margin-left: 2%;
+}
+
+.textbox {
+    margin-bottom: 10px;
+    width: 35%;
+    padding: 8px;
+    margin-left: 45%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline;
+  }
+
+  .textbox1 {
+    margin-left: 5%;
+    margin-bottom: 10px;
+    width: 35%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline;
+  }
+  .innerContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+  }
+ 

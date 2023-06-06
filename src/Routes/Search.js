@@ -4,7 +4,7 @@ import { Map, GoogleApiWrapper} from 'google-maps-react';
 import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-maps/api';
 
 
-    const Wrong = (props) => {
+    const Search = (props) => {
     const [apiKey, setApiKey] = useState('AIzaSyDtT2Wl3LOuxKkLwbqbkP9tQScwyH_RShg');
     const [isLoading, setIsLoading] = useState(true);
 
@@ -16,11 +16,7 @@ import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-ma
     const destinationRef = useRef();
 
 
-    // const {isLoaded} = useJsApiLoader({
-    //     googleMapsApiKey: {apiKey},
-    //     libraries:['places'],
-    // })
-
+  
     async function calculateRoute ()
     {
         if(originRef.current.value === '' || destinationRef.current.value === '')
@@ -70,16 +66,18 @@ import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-ma
             </Autocomplete>
 
             <button className="button" onClick={calculateRoute}>Calculate Route</button>
+            
         </div>
 
             <p className="inline-text"><em><b>Distance: {Distance}</b></em></p>
             <p className="inline-text"><em><b>Duration: {Duration}</b></em></p>
+
         
         {isLoading ? (<div>Loading Maps...</div>) : (
         <LoadScriptNext googleMapsApiKey={apiKey}>
           <Map
             google={props.google}
-            mapContainerStyle={{ height: '100%' }}
+            mapContainerStyle={{ height: '50%' }}
             zoom={14}>
 
             {DirectionsResponse && <DirectionsRenderer directions={DirectionsResponse}/>}
@@ -89,14 +87,11 @@ import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-ma
         </LoadScriptNext>
         )}
       
-
-
-
-    </div>
+</div>
         
 );}
 
 //export default Wrong;
 export default GoogleApiWrapper({
     apiKey: ("AIzaSyDtT2Wl3LOuxKkLwbqbkP9tQScwyH_RShg")
-  })(Wrong)
+  })(Search)
