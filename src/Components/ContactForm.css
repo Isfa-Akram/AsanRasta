@@ -1,0 +1,106 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    
+}
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2%;
+   
+}
+.container h2{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: black;
+    letter-spacing: 2px;
+    margin-top: 2%;
+
+}
+.container p{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: black;
+    font-size: 1rem;
+    margin-top: 2%;
+}
+
+.contact-form i{
+    font-size: 22px;
+    padding: 3%;
+    border-radius: 80%;
+    margin: 2%;
+    cursor: pointer;
+    border: 2px solid rgb(190, 190, 190);
+    color: black;
+}
+.contact-form i:hover{
+    cursor: pointer;
+    color: blue;
+}
+
+.contact-form {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+.form-info{
+    font-size: 16px;
+    font-style: italic;
+    color: black;
+    letter-spacing: 1px;
+    
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: white;
+    
+}
+input::placeholder{
+    color: black;
+    text-align: center;
+}
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    background-color: white;
+
+}
+textarea::placeholder{
+    color: black;
+    text-align: center;
+}
+.submit
+{
+    width: 30%;
+    padding: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 30%;
+    border: 2px solid rgb(black, black, black);
+    
+}
+
+.submit:hover{
+    cursor: pointer;
+    color: blue;
+}

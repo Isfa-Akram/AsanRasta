@@ -1,20 +1,23 @@
-.design{
-  max-width: 800px;
-  margin: 0 auto;
+.design{ 
   
-  background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 4rem 6rem;
+  text-align: start;
+  
 }
 
 .design h1{
-    font-size: 24px;
-    margin-bottom: 20px;
-   margin-top: 10%;
+   padding-bottom: 1rem;
  
 }
 
 .design p{
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    padding-bottom: 2rem;
+}
+
+@media screen and(max-width:850px) {
+  .design{
+    margin: 4rem 2rem;
+  }
+  
 }

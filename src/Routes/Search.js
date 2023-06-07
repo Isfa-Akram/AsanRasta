@@ -2,6 +2,7 @@ import React, {useState,useEffect, useRef} from 'react';
 import './Style.css';
 import { Map, GoogleApiWrapper} from 'google-maps-react';
 import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-maps/api';
+import Navbar from '../Components/Navbar';
 
 
     const Search = (props) => {
@@ -52,6 +53,9 @@ import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-ma
 
 
   return(
+
+    <>
+    <Navbar/>
     
 <div className="container1"> 
 
@@ -88,6 +92,8 @@ import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-ma
         )}
       
 </div>
+
+</>
         
 );}
 

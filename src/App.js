@@ -1,6 +1,4 @@
 import React from 'react';
-import MapFields from './MapFields';
-import Navbar from './Components/Navbar';
 import {HashRouter,Routes ,Route} from 'react-router-dom';
 import Home from './Routes/Home';
 import About from './Routes/About';
@@ -16,7 +14,6 @@ function App()
 
    <HashRouter>
 
-          <Navbar/> 
           <Routes>
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/about' element={<About/>}/>
