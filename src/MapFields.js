@@ -39,6 +39,9 @@ import {LoadScriptNext, Autocomplete, DirectionsRenderer} from '@react-google-ma
         setDistance(result.routes[0].legs[0].distance.text)
         setDuration(result.routes[0].legs[0].duration.text)
 
+        const transitLayer = new google.maps.TransitLayer();
+        transitLayer.setMap(<Map/>);
+
     }
   
     useEffect(() => {
